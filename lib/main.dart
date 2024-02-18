@@ -1,26 +1,21 @@
+import 'package:flutter_application_1/column_widget.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-
-  runApp(const MyApp());
-
+  void main() {
+    runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  class MyApp extends StatelessWidget {
+    const MyApp({Key? key}) : super(key: key);
   
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'flutter application 1',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Belajar Flutter'),
-        )
-      )
-    );
+    @override
+    Widget build(BuildContext context) {
+      return const MaterialApp(
+          title: "Aplikasi Flutter Pertama",
+          home: ColumnWidget(),
+      );
+    }
   }
-}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
